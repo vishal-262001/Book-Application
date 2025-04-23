@@ -1,0 +1,49 @@
+#spring:
+#  datasource:
+#    url: jdbc:postgresql://book_social_network_l7bp
+#    username: book_social_network_l7bp_user
+#    password: PCY60N1cQAQ6IjnJCbe65ZjWGnJYpQHs
+#    driver-class-name: org.postgresql.Driver
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: false
+#    properties:
+#      hibernate:
+#        format_sql: true
+#    database: postgresql
+#    database-platform: org.hibernate.dialect.PostgreSQLDialect
+#  mail:
+#    host: smtp.gmail.com
+#    port: 587
+#    username: vishalhadke262@gmail.com
+#    password: tracgyldccjoozf
+#    properties:
+#      mail.smtp:
+#        trust: "*"
+#        auth: true
+#        starttls:
+#          enabled: true
+#        connectiontimeout: 5000
+#        timeout: 3000
+#        writetimeout: 5000
+#  security:
+#    oauth2:
+#      resourceserver:
+#        jwt:
+#          issuer-uri: "http://localhost:9090/realms/book-social-network"
+#
+#server:
+#  port: 8088
+#
+#
+#
+#application:
+#  security:
+#    jwt:
+#      secret-key: 4b80d1ab83fbf00284922629803527bfafb7a5912f29d7015bbcfc0b317f3253
+#      expiration: 8640000
+#
+#  mailing:
+#    frontend:
+#      activation_url: http://localhost:4200/Activate-Account
