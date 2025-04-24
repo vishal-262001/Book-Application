@@ -1,15 +1,9 @@
 package com.example.demo.auth;
 
-import com.example.demo.Email.EmailService;
-import com.example.demo.Email.EmailTemplateName;
-import com.example.demo.role.RoleRepository;
-import com.example.demo.security.JwtService;
-import com.example.demo.token.Token;
-import com.example.demo.token.TokenRepository;
-import com.example.demo.user.User;
-import com.example.demo.user.UserRepository;
-import jakarta.mail.MessagingException;
-import jakarta.validation.Valid;
+import java.security.SecureRandom;
+import java.time.LocalDateTime;
+import java.util.HashMap;
+import java.util.List;
 
 import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Value;
@@ -19,11 +13,17 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import com.example.demo.Email.EmailService;
+import com.example.demo.Email.EmailTemplateName;
+import com.example.demo.role.RoleRepository;
+import com.example.demo.security.JwtService;
+import com.example.demo.token.Token;
+import com.example.demo.token.TokenRepository;
+import com.example.demo.user.User;
+import com.example.demo.user.UserRepository;
 
-import java.security.SecureRandom;
-import java.time.LocalDateTime;
-import java.util.HashMap;
-import java.util.List;
+import jakarta.mail.MessagingException;
+import jakarta.validation.Valid;
 
 
 @Service
